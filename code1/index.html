@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #2d6fb1;
+        }
+        #taskInput {
+            width: 300px;
+            padding: 10px;
+        }
+        #addButton, #deleteButton {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #taskList {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        #taskList li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            background-color:#2d6fb181;
+        }
+        #taskList li :hover{
+            background-color:#73b1ef81;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addButton">Add Task</button>
+    <button id="deleteButton">Delete Task</button>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
